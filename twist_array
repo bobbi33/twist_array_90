@@ -1,0 +1,36 @@
+#include "stdafx.h"
+
+
+int main(){
+	int a[4][4];
+	int b[4][4];
+	int i = 0, j = 0;
+
+	for(j = 0; j< 4;j++){
+		for(i = 0; i< 4; i++){
+			scanf("%d",&a[i][j]);
+			printf("%6d",a[i][j]);	
+		}
+		printf("\n");
+	}
+
+	printf("begin\n");
+
+	for(j = 0; j< 4;j++){
+		for(i = 0; i< 4; i++){
+			b[3-i][j] = a[i][j];
+		}
+	}
+
+	
+		for(i = 0; i< 4; i++){
+			for(j = 0; j< 4;j++){
+			printf("%6d",b[i][j]);	
+		}
+		printf("\n");
+	}
+
+
+	return 0;
+}
+
